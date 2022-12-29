@@ -11,7 +11,7 @@
     "message": "Music Link - Options",
     "description": "Options page title."
   },
-  "optionsLabel": {
+  "optionsSteamingPlatformLabel": {
     "message": "Sélectionnez votre plateforme de streaming :",
     "description": "Options page label for steaming services list."
   },
