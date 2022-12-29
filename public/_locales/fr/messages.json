@@ -1,6 +1,6 @@
 {
   "name": {
-    "message": "Music Link",
+    "message": "Music Bridge",
     "description": "Extension name."
   },
   "description": {
@@ -8,7 +8,7 @@
     "description": "Extension description."
   },
   "optionsTitle": {
-    "message": "Music Link - Options",
+    "message": "Music Bridge - Options",
     "description": "Options page title."
   },
   "optionsSteamingPlatformLabel": {
