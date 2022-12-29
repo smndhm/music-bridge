@@ -1,0 +1,21 @@
+{
+  "name": "music-link",
+  "private": true,
+  "version": "1.1.2",
+  "type": "module",
+  "scripts": {
+    "build": "rm -r dist && pnpm build:content && pnpm build:background && pnpm build:options",
+    "build:content": "vite build --config vite.content.config.ts",
+    "build:background": "vite build --config vite.background.config.ts",
+    "build:options": "vite build --config vite.options.config.ts"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.206",
+    "@types/node": "^18.11.17",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.57.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0",
+    "vite-plugin-html-minifier": "^1.0.2"
+  }
+}

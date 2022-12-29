@@ -1,0 +1,22 @@
+{
+  "name": {
+    "message": "Music Link",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Click on any music link, it will open on your favorite platform!",
+    "description": "Extension description."
+  },
+  "optionsTitle": {
+    "message": "Music Link - Options",
+    "description": "Options page title."
+  },
+  "optionsLabel": {
+    "message": "Select your streaming platform:",
+    "description": "Options page label for steaming services list."
+  },
+  "optionsCredits": {
+    "message": "Made with the <a aria-label=\"Open the Odelsi website in a new window.\" href=\"https://odesli.co/\" target=\"_blank\">Odesli</a> API.",
+    "description": "Options page credits."
+  }
+}
