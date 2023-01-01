@@ -1,22 +1,25 @@
+import browser from 'webextension-polyfill';
 import { platforms } from './platforms';
 import 'normalize.css';
 import './options.scss';
 
-// Get stored platform, Spotify default
-chrome.storage.sync.get({ platform: 'spotify' }, ({ platform }) => {
+(async () => {
+  // Get stored platform, Spotify default
+  let { platform = 'spotify' } = await browser.storage.local.get('platform');
+
   // Set page lang
-  document.documentElement.lang = chrome.i18n.getMessage('@@ui_locale');
+  document.documentElement.lang = browser.i18n.getMessage('@@ui_locale');
   // Set messages
-  document.title = chrome.i18n.getMessage('optionsTitle');
+  document.title = browser.i18n.getMessage('optionsTitle');
   const optionsSteamingPlatformLabel = document.createTextNode(
-    chrome.i18n.getMessage('optionsSteamingPlatformLabel'),
+    browser.i18n.getMessage('optionsSteamingPlatformLabel'),
   );
   document
     .querySelector('[for="streaming-platforms"]')
     ?.appendChild(optionsSteamingPlatformLabel);
   const footerElement = document.querySelector('footer');
   if (footerElement)
-    footerElement.innerHTML = chrome.i18n.getMessage('optionsCredits');
+    footerElement.innerHTML = browser.i18n.getMessage('optionsCredits');
   // Get select element
   const select = document.getElementById('streaming-platforms');
   // Add streaming services
@@ -29,7 +32,7 @@ chrome.storage.sync.get({ platform: 'spotify' }, ({ platform }) => {
     select?.append(option);
   }
   // Set new platform on change
-  select?.addEventListener('change', ({ target: { value } }: any) => {
-    chrome.storage.sync.set({ platform: value }, () => {});
+  select?.addEventListener('change', async ({ target: { value } }: any) => {
+    await browser.storage.local.set({ platform: value });
   });
-});
+})();

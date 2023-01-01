@@ -1,21 +1,26 @@
 {
   "name": "music-bridge",
   "private": true,
-  "version": "1.1.4",
+  "version": "1.2.0",
   "type": "module",
   "scripts": {
-    "build": "rm -r dist && pnpm build:content && pnpm build:background && pnpm build:options",
+    "build": "rm -rf dist && pnpm build:manifest && pnpm build:content && pnpm build:background && pnpm build:options",
+    "build:firefox": "rm -rf dist && pnpm build:manifest:v2 && pnpm build:content && pnpm build:background && pnpm build:options",
     "build:content": "vite build --config vite.content.config.ts",
     "build:background": "vite build --config vite.background.config.ts",
-    "build:options": "vite build --config vite.options.config.ts"
+    "build:options": "vite build --config vite.options.config.ts",
+    "build:manifest": "ts-node-esm ./src/manifest.ts",
+    "build:manifest:v2": "pnpm build:manifest -- v2"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.206",
     "@types/node": "^18.11.17",
+    "@types/webextension-polyfill": "^0.9.2",
     "normalize.css": "^8.0.1",
     "sass": "^1.57.1",
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
-    "vite-plugin-html-minifier": "^1.0.2"
+    "vite-plugin-html-minifier": "^1.0.2",
+    "webextension-polyfill": "^0.10.0"
   }
 }
