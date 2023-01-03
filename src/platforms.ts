@@ -8,17 +8,37 @@ interface Platforms {
 }
 
 export const platforms: Platforms = {
-  spotify: {
-    name: 'Spotify',
-    url: 'https://open.spotify.com',
+  amazonMusic: {
+    name: 'Amazon Music',
+    url: 'https://music.amazon.com',
+  },
+  appleMusic: {
+    name: 'Apple Music',
+    url: 'https://music.apple.com',
   },
   deezer: {
     name: 'Deezer',
     url: 'https://www.deezer.com',
   },
-  appleMusic: {
-    name: 'Apple Music',
-    url: 'https://music.apple.com',
+  napster: {
+    name: 'Napster',
+    url: 'https://play.napster.com',
+  },
+  pandora: {
+    name: 'Pandora',
+    url: 'https://www.pandora.com',
+  },
+  soundcloud: {
+    name: 'SoundCloud',
+    url: 'https://soundcloud.com',
+  },
+  spotify: {
+    name: 'Spotify',
+    url: 'https://open.spotify.com',
+  },
+  tidal: {
+    name: 'Tidal',
+    url: 'https://listen.tidal.com',
   },
   youtube: {
     name: 'Youtube',
@@ -27,26 +47,6 @@ export const platforms: Platforms = {
   youtubeMusic: {
     name: 'Youtube Music',
     url: 'https://music.youtube.com',
-  },
-  tidal: {
-    name: 'Tidal',
-    url: 'https://listen.tidal.com',
-  },
-  soundcloud: {
-    name: 'SoundCloud',
-    url: 'https://soundcloud.com',
-  },
-  pandora: {
-    name: 'Pandora',
-    url: 'https://www.pandora.com',
-  },
-  amazonMusic: {
-    name: 'Amazon Music',
-    url: 'https://music.amazon.com',
-  },
-  napster: {
-    name: 'Napster',
-    url: 'https://play.napster.com',
   },
 };
 

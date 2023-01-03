@@ -15,6 +15,14 @@
     "message": "Select your streaming platform:",
     "description": "Options page label for steaming services list."
   },
+  "optionsSaveButton": {
+    "message": "Save",
+    "description": "Save options button"
+  },
+  "optionsSaveConfirmation": {
+    "message": "Platform saved.",
+    "description": "Save options button confirmation"
+  },
   "optionsCredits": {
     "message": "Made with the <a aria-label=\"Open the Odelsi website in a new window.\" href=\"https://odesli.co/\" target=\"_blank\">Odesli</a> API.",
     "description": "Options page credits."
