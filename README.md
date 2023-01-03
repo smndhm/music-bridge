@@ -2,9 +2,25 @@
 
 Browser extension to open any music link on your favorite streaming platform.
 
+Available for:
+
+- [Chrome](https://chrome.google.com/webstore/detail/streaming-link/mbebbcaajfmockkcflajghbambbimpck)
+- [Firefox](https://addons.mozilla.org/fr/firefox/addon/music-bridge/)
+
 Made with the [Odesli](https://odesli.co/) API.
 
-Available on [Chrome Web Store](https://chrome.google.com/webstore/detail/streaming-link/mbebbcaajfmockkcflajghbambbimpck).
+## Supported platform
+
+- Amazon Music
+- Apple Music
+- Deezer
+- Napster
+- Pandora
+- Soundcloud
+- Spotify
+- Tidal
+- Youtube (only redirection to)
+- Youtube Music
 
 ## Wordings
 
