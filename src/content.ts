@@ -3,11 +3,17 @@ import { platforms } from './platforms';
 
 (async () => {
   let { platform = 'spotify' } = await browser.storage.local.get('platform');
+  let { openInApp = false } = await browser.storage.local.get('openInApp');
 
-  const redirect = `https://song.link/redirect?url=${encodeURIComponent(
-    window.location.href,
-  )}&to=${platform}`;
+  const params = new URLSearchParams({
+    url: encodeURIComponent(window.location.href),
+    platform,
+  });
 
-  if (!window.location.href.startsWith(platforms[platform].url))
+  if (openInApp) params.set('typeURI', 'nativeAppUriDesktop');
+
+  const redirect = `https://music-bridge.bricodage.fr/?${params.toString()}`;
+
+  if (openInApp || !window.location.href.startsWith(platforms[platform].url))
     window.location.href = redirect;
 })();

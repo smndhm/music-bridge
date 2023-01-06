@@ -15,6 +15,10 @@
     "message": "Select your streaming platform:",
     "description": "Options page label for steaming services list."
   },
+  "optionsOpenAppLabel": {
+    "message": "Open in desktop app.",
+    "description": "Options page label to open links in desktop app."
+  },
   "optionsSaveButton": {
     "message": "Save",
     "description": "Save options button"

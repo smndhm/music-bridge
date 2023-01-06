@@ -1,6 +1,7 @@
 interface Platform {
   name: string;
   url: string;
+  hasNativeAppLink?: boolean;
 }
 
 interface Platforms {
@@ -15,10 +16,12 @@ export const platforms: Platforms = {
   appleMusic: {
     name: 'Apple Music',
     url: 'https://music.apple.com',
+    hasNativeAppLink: true,
   },
   deezer: {
     name: 'Deezer',
     url: 'https://www.deezer.com',
+    hasNativeAppLink: true,
   },
   napster: {
     name: 'Napster',
@@ -35,6 +38,7 @@ export const platforms: Platforms = {
   spotify: {
     name: 'Spotify',
     url: 'https://open.spotify.com',
+    hasNativeAppLink: true,
   },
   tidal: {
     name: 'Tidal',
