@@ -6,6 +6,7 @@ Available for:
 
 - [Chrome](https://chrome.google.com/webstore/detail/streaming-link/mbebbcaajfmockkcflajghbambbimpck)
 - [Firefox](https://addons.mozilla.org/fr/firefox/addon/music-bridge/)
+- [Edge](https://microsoftedge.microsoft.com/addons/detail/music-bridge/kfbedaeciahfjnknbjkcnjknkbdlcnld)
 
 Made with the [Odesli](https://odesli.co/) API.
 

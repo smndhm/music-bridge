@@ -34,29 +34,35 @@ body {
 }
 
 main {
-  width: 40rem;
+  max-width: 100%;
   padding: 2rem;
   margin: auto;
 
   label {
     display: inline-block;
-  }
+    margin-bottom: 1rem;
 
-  select {
-    width: 100%;
-    max-width: 100%;
-    margin: 0.5rem 0 1rem;
-    padding: 1rem 1.5rem;
+    select {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 0.5rem;
+      padding: 1rem 1.5rem;
 
-    background-color: var(--background);
-    border-radius: var(--border-radius);
+      background-color: var(--background);
+      border-radius: var(--border-radius);
 
-    font-size: 2rem;
-    color: var(--color);
+      font-size: 2rem;
+      color: var(--color);
 
-    &:hover,
-    &:focus {
-      box-shadow: 0 0 0 0.2rem rgba(var(--color-rgb), 0.5);
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(var(--color-rgb), 0.5);
+      }
+    }
+
+    input[type='checkbox'] {
+      margin-right: 1rem;
+      vertical-align: middle;
     }
   }
 

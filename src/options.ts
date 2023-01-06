@@ -6,20 +6,22 @@ import './options.scss';
 (async () => {
   // Get stored platform, Spotify default
   let { platform = 'spotify' } = await browser.storage.local.get('platform');
+  let { openInApp = false } = await browser.storage.local.get('openInApp');
+  let platformInfo = platforms[platform];
 
   // Set page lang
   document.documentElement.lang = browser.i18n.getMessage('@@ui_locale');
 
   // Set page title
   document.title = browser.i18n.getMessage('optionsTitle');
-  const optionsSteamingPlatformLabel = document.createTextNode(
-    browser.i18n.getMessage('optionsSteamingPlatformLabel'),
-  );
 
   // Set select label
+  const optionsSteamingPlatformLabel: Text = document.createTextNode(
+    browser.i18n.getMessage('optionsSteamingPlatformLabel'),
+  );
   document
     .querySelector('[for="streaming-platforms"]')
-    ?.appendChild(optionsSteamingPlatformLabel);
+    ?.prepend(optionsSteamingPlatformLabel);
 
   // Set select elements
   const select: HTMLInputElement = document.getElementById(
@@ -35,11 +37,38 @@ import './options.scss';
     select?.append(option);
   }
 
+  // Set checkbox label
+  const optionsOpenAppLabel: Text = document.createTextNode(
+    browser.i18n.getMessage('optionsOpenAppLabel'),
+  );
+  const openDesktopApp: HTMLLabelElement = document.querySelector(
+    '[for="open-app"]',
+  ) as HTMLLabelElement;
+  openDesktopApp.appendChild(optionsOpenAppLabel);
+
+  // Set Checkbox value
+  const checkbox: HTMLInputElement = document.getElementById(
+    'open-app',
+  ) as HTMLInputElement;
+  checkbox.checked = openInApp;
+
+  // Update checkbox visibility
+  const displayOptionsOpenDesktopApp = () => {
+    openDesktopApp.hidden = platformInfo.hasNativeAppLink !== true;
+  };
+  displayOptionsOpenDesktopApp();
+
+  // Watch platform change
+  select.addEventListener('change', ({ target: { value } }) => {
+    platformInfo = platforms[value];
+    checkbox.checked = false;
+    displayOptionsOpenDesktopApp();
+  });
+
   // Set button
   const button: HTMLButtonElement = document.querySelector(
     'button',
   ) as HTMLButtonElement;
-  // Label
   const optionsSaveButton = document.createTextNode(
     browser.i18n.getMessage('optionsSaveButton'),
   );
@@ -60,11 +89,14 @@ import './options.scss';
   ) as HTMLFormElement;
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
-    await browser.storage.local.set({ platform: select.value });
+    await browser.storage.local.set({
+      platform: select.value,
+      openInApp: checkbox.checked,
+    });
     alert.hidden = false;
     setTimeout(() => {
       alert.hidden = true;
-    }, 3000);
+    }, 2000);
   });
 
   // Footer credits
