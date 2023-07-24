@@ -1,0 +1,102 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`options > browser (firefox) 1`] = `
+{
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "background.js",
+    ],
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content.js",
+      ],
+      "matches": [
+        "https://open.spotify.com/track/*",
+        "https://open.spotify.com/album/*",
+        "https://www.deezer.com/*/track/*",
+        "https://www.deezer.com/*/album/*",
+        "https://music.apple.com/*/album/*",
+        "https://beta.music.apple.com/*/album/*",
+        "https://music.youtube.com/watch?v=*",
+        "https://music.youtube.com/playlist?list=*",
+        "https://listen.tidal.com/track/*",
+        "https://listen.tidal.com/album/*",
+        "https://www.pandora.com/TR:*",
+        "https://www.pandora.com/AL:*",
+        "https://music.amazon.com/albums/*",
+        "https://web.napster.com/track/*",
+        "https://web.napster.com/album/*",
+      ],
+      "run_at": "document_start",
+    },
+  ],
+  "default_locale": "en",
+  "description": "__MSG_description__",
+  "icons": {
+    "128": "icons/128.png",
+    "48": "icons/48.png",
+  },
+  "manifest_version": 2,
+  "name": "__MSG_name__",
+  "options_ui": {
+    "open_in_tab": false,
+    "page": "options.html",
+  },
+  "permissions": [
+    "storage",
+  ],
+  "version": "1.5.0",
+}
+`;
+
+exports[`options > browser (not firefox) 1`] = `
+{
+  "background": {
+    "service_worker": "background.js",
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content.js",
+      ],
+      "matches": [
+        "https://open.spotify.com/track/*",
+        "https://open.spotify.com/album/*",
+        "https://www.deezer.com/*/track/*",
+        "https://www.deezer.com/*/album/*",
+        "https://music.apple.com/*/album/*",
+        "https://beta.music.apple.com/*/album/*",
+        "https://music.youtube.com/watch?v=*",
+        "https://music.youtube.com/playlist?list=*",
+        "https://listen.tidal.com/track/*",
+        "https://listen.tidal.com/album/*",
+        "https://www.pandora.com/TR:*",
+        "https://www.pandora.com/AL:*",
+        "https://music.amazon.com/albums/*",
+        "https://web.napster.com/track/*",
+        "https://web.napster.com/album/*",
+      ],
+      "run_at": "document_start",
+    },
+  ],
+  "default_locale": "en",
+  "description": "__MSG_description__",
+  "icons": {
+    "128": "icons/128.png",
+    "48": "icons/48.png",
+  },
+  "manifest_version": 3,
+  "name": "__MSG_name__",
+  "options_ui": {
+    "open_in_tab": false,
+    "page": "options.html",
+  },
+  "permissions": [
+    "storage",
+  ],
+  "version": "1.5.0",
+}
+`;

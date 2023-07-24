@@ -25,7 +25,7 @@ export const platforms: Platforms = {
   },
   napster: {
     name: 'Napster',
-    url: 'https://play.napster.com',
+    url: 'https://web.napster.com',
   },
   pandora: {
     name: 'Pandora',

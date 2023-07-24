@@ -1,0 +1,271 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`options > Platform (amazonMusic) 1`] = `
+"<html lang="@@ui_locale"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>optionsTitle</title></head>
+  <body>
+    <main>
+      <form>
+        <label for="streaming-platforms">optionsSteamingPlatformLabel
+          <select id="streaming-platforms" name="streaming-platforms"><option value="amazonMusic" selected="">Amazon Music</option><option value="appleMusic">Apple Music</option><option value="deezer">Deezer</option><option value="napster">Napster</option><option value="pandora">Pandora</option><option value="soundcloud">SoundCloud</option><option value="spotify">Spotify</option><option value="tidal">Tidal</option><option value="youtube">Youtube</option><option value="youtubeMusic">Youtube Music</option></select>
+        </label>
+        <label for="open-app" hidden="">
+          <input type="checkbox" name="open-app" id="open-app">
+        optionsOpenAppLabel</label>
+        <div id="save-options">
+          <div role="alert" hidden="">optionsSaveConfirmation</div>
+          <button>optionsSaveButton</button>
+        </div>
+      </form>
+    </main>
+    <footer>optionsCredits</footer>
+    <script type="module" src="./options.ts"></script>
+  
+
+</body></html>"
+`;
+
+exports[`options > Platform (appleMusic) 1`] = `
+"<html lang="@@ui_locale"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>optionsTitle</title></head>
+  <body>
+    <main>
+      <form>
+        <label for="streaming-platforms">optionsSteamingPlatformLabel
+          <select id="streaming-platforms" name="streaming-platforms"><option value="amazonMusic">Amazon Music</option><option value="appleMusic" selected="">Apple Music</option><option value="deezer">Deezer</option><option value="napster">Napster</option><option value="pandora">Pandora</option><option value="soundcloud">SoundCloud</option><option value="spotify">Spotify</option><option value="tidal">Tidal</option><option value="youtube">Youtube</option><option value="youtubeMusic">Youtube Music</option></select>
+        </label>
+        <label for="open-app">
+          <input type="checkbox" name="open-app" id="open-app">
+        optionsOpenAppLabel</label>
+        <div id="save-options">
+          <div role="alert" hidden="">optionsSaveConfirmation</div>
+          <button>optionsSaveButton</button>
+        </div>
+      </form>
+    </main>
+    <footer>optionsCredits</footer>
+    <script type="module" src="./options.ts"></script>
+  
+
+</body></html>"
+`;
+
+exports[`options > Platform (deezer) 1`] = `
+"<html lang="@@ui_locale"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>optionsTitle</title></head>
+  <body>
+    <main>
+      <form>
+        <label for="streaming-platforms">optionsSteamingPlatformLabel
+          <select id="streaming-platforms" name="streaming-platforms"><option value="amazonMusic">Amazon Music</option><option value="appleMusic">Apple Music</option><option value="deezer" selected="">Deezer</option><option value="napster">Napster</option><option value="pandora">Pandora</option><option value="soundcloud">SoundCloud</option><option value="spotify">Spotify</option><option value="tidal">Tidal</option><option value="youtube">Youtube</option><option value="youtubeMusic">Youtube Music</option></select>
+        </label>
+        <label for="open-app">
+          <input type="checkbox" name="open-app" id="open-app">
+        optionsOpenAppLabel</label>
+        <div id="save-options">
+          <div role="alert" hidden="">optionsSaveConfirmation</div>
+          <button>optionsSaveButton</button>
+        </div>
+      </form>
+    </main>
+    <footer>optionsCredits</footer>
+    <script type="module" src="./options.ts"></script>
+  
+
+</body></html>"
+`;
+
+exports[`options > Platform (napster) 1`] = `
+"<html lang="@@ui_locale"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>optionsTitle</title></head>
+  <body>
+    <main>
+      <form>
+        <label for="streaming-platforms">optionsSteamingPlatformLabel
+          <select id="streaming-platforms" name="streaming-platforms"><option value="amazonMusic">Amazon Music</option><option value="appleMusic">Apple Music</option><option value="deezer">Deezer</option><option value="napster" selected="">Napster</option><option value="pandora">Pandora</option><option value="soundcloud">SoundCloud</option><option value="spotify">Spotify</option><option value="tidal">Tidal</option><option value="youtube">Youtube</option><option value="youtubeMusic">Youtube Music</option></select>
+        </label>
+        <label for="open-app" hidden="">
+          <input type="checkbox" name="open-app" id="open-app">
+        optionsOpenAppLabel</label>
+        <div id="save-options">
+          <div role="alert" hidden="">optionsSaveConfirmation</div>
+          <button>optionsSaveButton</button>
+        </div>
+      </form>
+    </main>
+    <footer>optionsCredits</footer>
+    <script type="module" src="./options.ts"></script>
+  
+
+</body></html>"
+`;
+
+exports[`options > Platform (pandora) 1`] = `
+"<html lang="@@ui_locale"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>optionsTitle</title></head>
+  <body>
+    <main>
+      <form>
+        <label for="streaming-platforms">optionsSteamingPlatformLabel
+          <select id="streaming-platforms" name="streaming-platforms"><option value="amazonMusic">Amazon Music</option><option value="appleMusic">Apple Music</option><option value="deezer">Deezer</option><option value="napster">Napster</option><option value="pandora" selected="">Pandora</option><option value="soundcloud">SoundCloud</option><option value="spotify">Spotify</option><option value="tidal">Tidal</option><option value="youtube">Youtube</option><option value="youtubeMusic">Youtube Music</option></select>
+        </label>
+        <label for="open-app" hidden="">
+          <input type="checkbox" name="open-app" id="open-app">
+        optionsOpenAppLabel</label>
+        <div id="save-options">
+          <div role="alert" hidden="">optionsSaveConfirmation</div>
+          <button>optionsSaveButton</button>
+        </div>
+      </form>
+    </main>
+    <footer>optionsCredits</footer>
+    <script type="module" src="./options.ts"></script>
+  
+
+</body></html>"
+`;
+
+exports[`options > Platform (soundcloud) 1`] = `
+"<html lang="@@ui_locale"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>optionsTitle</title></head>
+  <body>
+    <main>
+      <form>
+        <label for="streaming-platforms">optionsSteamingPlatformLabel
+          <select id="streaming-platforms" name="streaming-platforms"><option value="amazonMusic">Amazon Music</option><option value="appleMusic">Apple Music</option><option value="deezer">Deezer</option><option value="napster">Napster</option><option value="pandora">Pandora</option><option value="soundcloud" selected="">SoundCloud</option><option value="spotify">Spotify</option><option value="tidal">Tidal</option><option value="youtube">Youtube</option><option value="youtubeMusic">Youtube Music</option></select>
+        </label>
+        <label for="open-app" hidden="">
+          <input type="checkbox" name="open-app" id="open-app">
+        optionsOpenAppLabel</label>
+        <div id="save-options">
+          <div role="alert" hidden="">optionsSaveConfirmation</div>
+          <button>optionsSaveButton</button>
+        </div>
+      </form>
+    </main>
+    <footer>optionsCredits</footer>
+    <script type="module" src="./options.ts"></script>
+  
+
+</body></html>"
+`;
+
+exports[`options > Platform (spotify) 1`] = `
+"<html lang="@@ui_locale"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>optionsTitle</title></head>
+  <body>
+    <main>
+      <form>
+        <label for="streaming-platforms">optionsSteamingPlatformLabel
+          <select id="streaming-platforms" name="streaming-platforms"><option value="amazonMusic">Amazon Music</option><option value="appleMusic">Apple Music</option><option value="deezer">Deezer</option><option value="napster">Napster</option><option value="pandora">Pandora</option><option value="soundcloud">SoundCloud</option><option value="spotify" selected="">Spotify</option><option value="tidal">Tidal</option><option value="youtube">Youtube</option><option value="youtubeMusic">Youtube Music</option></select>
+        </label>
+        <label for="open-app">
+          <input type="checkbox" name="open-app" id="open-app">
+        optionsOpenAppLabel</label>
+        <div id="save-options">
+          <div role="alert" hidden="">optionsSaveConfirmation</div>
+          <button>optionsSaveButton</button>
+        </div>
+      </form>
+    </main>
+    <footer>optionsCredits</footer>
+    <script type="module" src="./options.ts"></script>
+  
+
+</body></html>"
+`;
+
+exports[`options > Platform (tidal) 1`] = `
+"<html lang="@@ui_locale"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>optionsTitle</title></head>
+  <body>
+    <main>
+      <form>
+        <label for="streaming-platforms">optionsSteamingPlatformLabel
+          <select id="streaming-platforms" name="streaming-platforms"><option value="amazonMusic">Amazon Music</option><option value="appleMusic">Apple Music</option><option value="deezer">Deezer</option><option value="napster">Napster</option><option value="pandora">Pandora</option><option value="soundcloud">SoundCloud</option><option value="spotify">Spotify</option><option value="tidal" selected="">Tidal</option><option value="youtube">Youtube</option><option value="youtubeMusic">Youtube Music</option></select>
+        </label>
+        <label for="open-app" hidden="">
+          <input type="checkbox" name="open-app" id="open-app">
+        optionsOpenAppLabel</label>
+        <div id="save-options">
+          <div role="alert" hidden="">optionsSaveConfirmation</div>
+          <button>optionsSaveButton</button>
+        </div>
+      </form>
+    </main>
+    <footer>optionsCredits</footer>
+    <script type="module" src="./options.ts"></script>
+  
+
+</body></html>"
+`;
+
+exports[`options > Platform (youtube) 1`] = `
+"<html lang="@@ui_locale"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>optionsTitle</title></head>
+  <body>
+    <main>
+      <form>
+        <label for="streaming-platforms">optionsSteamingPlatformLabel
+          <select id="streaming-platforms" name="streaming-platforms"><option value="amazonMusic">Amazon Music</option><option value="appleMusic">Apple Music</option><option value="deezer">Deezer</option><option value="napster">Napster</option><option value="pandora">Pandora</option><option value="soundcloud">SoundCloud</option><option value="spotify">Spotify</option><option value="tidal">Tidal</option><option value="youtube" selected="">Youtube</option><option value="youtubeMusic">Youtube Music</option></select>
+        </label>
+        <label for="open-app" hidden="">
+          <input type="checkbox" name="open-app" id="open-app">
+        optionsOpenAppLabel</label>
+        <div id="save-options">
+          <div role="alert" hidden="">optionsSaveConfirmation</div>
+          <button>optionsSaveButton</button>
+        </div>
+      </form>
+    </main>
+    <footer>optionsCredits</footer>
+    <script type="module" src="./options.ts"></script>
+  
+
+</body></html>"
+`;
+
+exports[`options > Platform (youtubeMusic) 1`] = `
+"<html lang="@@ui_locale"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>optionsTitle</title></head>
+  <body>
+    <main>
+      <form>
+        <label for="streaming-platforms">optionsSteamingPlatformLabel
+          <select id="streaming-platforms" name="streaming-platforms"><option value="amazonMusic">Amazon Music</option><option value="appleMusic">Apple Music</option><option value="deezer">Deezer</option><option value="napster">Napster</option><option value="pandora">Pandora</option><option value="soundcloud">SoundCloud</option><option value="spotify">Spotify</option><option value="tidal">Tidal</option><option value="youtube">Youtube</option><option value="youtubeMusic" selected="">Youtube Music</option></select>
+        </label>
+        <label for="open-app" hidden="">
+          <input type="checkbox" name="open-app" id="open-app">
+        optionsOpenAppLabel</label>
+        <div id="save-options">
+          <div role="alert" hidden="">optionsSaveConfirmation</div>
+          <button>optionsSaveButton</button>
+        </div>
+      </form>
+    </main>
+    <footer>optionsCredits</footer>
+    <script type="module" src="./options.ts"></script>
+  
+
+</body></html>"
+`;

@@ -24,7 +24,7 @@
     "description": "Save options button"
   },
   "optionsSaveConfirmation": {
-    "message": "Platform saved.",
+    "message": "Preferences saved.",
     "description": "Save options button confirmation"
   },
   "optionsCredits": {
