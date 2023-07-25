@@ -1,5 +1,6 @@
 import browser from 'webextension-polyfill';
 import { platforms } from './platforms';
+import { isChromeOs } from './utils';
 import 'normalize.css';
 import './options.scss';
 
@@ -41,9 +42,8 @@ import './options.scss';
   const optionsOpenAppLabel: Text = document.createTextNode(
     browser.i18n.getMessage('optionsOpenAppLabel'),
   );
-  const openDesktopApp: HTMLLabelElement = document.querySelector(
-    '[for="open-app"]',
-  ) as HTMLLabelElement;
+  const openDesktopApp: HTMLLabelElement =
+    document.querySelector('[for="open-app"]')!;
   openDesktopApp.appendChild(optionsOpenAppLabel);
 
   // Set Checkbox value
@@ -54,7 +54,8 @@ import './options.scss';
 
   // Update checkbox visibility
   const displayOptionsOpenDesktopApp = () => {
-    openDesktopApp.hidden = platformInfo.hasNativeAppLink !== true;
+    openDesktopApp.hidden =
+      platformInfo.hasNativeAppLink !== true || isChromeOs();
   };
   displayOptionsOpenDesktopApp();
 
@@ -66,27 +67,21 @@ import './options.scss';
   });
 
   // Set button
-  const button: HTMLButtonElement = document.querySelector(
-    'button',
-  ) as HTMLButtonElement;
+  const button: HTMLButtonElement = document.querySelector('button')!;
   const optionsSaveButton = document.createTextNode(
     browser.i18n.getMessage('optionsSaveButton'),
   );
   button.appendChild(optionsSaveButton);
 
   // Set Confirmation message
-  const alert: HTMLDivElement = document.querySelector(
-    '[role="alert"]',
-  ) as HTMLDivElement;
+  const alert: HTMLDivElement = document.querySelector('[role="alert"]')!;
   const optionsSaveConfirmation = document.createTextNode(
     browser.i18n.getMessage('optionsSaveConfirmation'),
   );
   alert.appendChild(optionsSaveConfirmation);
 
   //Add event listener to save platform value
-  const form: HTMLFormElement = document.querySelector(
-    'form',
-  ) as HTMLFormElement;
+  const form: HTMLFormElement = document.querySelector('form')!;
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
     await browser.storage.local.set({
@@ -100,8 +95,6 @@ import './options.scss';
   });
 
   // Footer credits
-  const footerElement: HTMLElement = document.querySelector(
-    'footer',
-  ) as HTMLElement;
+  const footerElement: HTMLElement = document.querySelector('footer')!;
   footerElement.innerHTML = browser.i18n.getMessage('optionsCredits');
 })();

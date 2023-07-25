@@ -3,7 +3,7 @@ import pckg from '../package.json' assert { type: 'json' };
 
 const isFirefoxManifest = process.argv[3] === 'firefox';
 
-const manifest = {
+export const manifest = {
   manifest_version: isFirefoxManifest ? 2 : 3,
   name: '__MSG_name__',
   description: '__MSG_description__',
@@ -21,6 +21,7 @@ const manifest = {
         'https://www.deezer.com/*/track/*',
         'https://www.deezer.com/*/album/*',
         'https://music.apple.com/*/album/*',
+        'https://beta.music.apple.com/*/album/*',
         'https://music.youtube.com/watch?v=*',
         'https://music.youtube.com/playlist?list=*',
         'https://listen.tidal.com/track/*',
