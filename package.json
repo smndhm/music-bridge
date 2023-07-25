@@ -1,17 +1,22 @@
 {
   "name": "music-bridge",
   "private": true,
-  "version": "1.5.0",
+  "version": "1.5.1",
   "type": "module",
   "scripts": {
     "test": "vitest run --coverage",
+    "build:archives": "pnpm build:archive && pnpm build:archive:firefox",
+    "build:archive": "pnpm build && (cd dist;zip -r -D ../build-manifest-v3.zip *)",
+    "build:archive:firefox": "pnpm build:firefox && (cd dist;zip -r -D ../build-manifest-v2.zip *)",
     "build": "rm -rf dist && pnpm build:manifest && pnpm build:content && pnpm build:background && pnpm build:options",
     "build:firefox": "rm -rf dist && pnpm build:manifest:firefox && pnpm build:content && pnpm build:background && pnpm build:options",
     "build:content": "vite build --config vite.content.config.ts",
     "build:background": "vite build --config vite.background.config.ts",
     "build:options": "vite build --config vite.options.config.ts",
     "build:manifest": "ts-node-esm ./src/manifest.ts",
-    "build:manifest:firefox": "pnpm build:manifest -- firefox"
+    "build:manifest:firefox": "pnpm build:manifest -- firefox",
+    "change": "changeset",
+    "release": "changeset version"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.206",
@@ -27,5 +32,8 @@
     "vite-plugin-html-minifier": "^1.0.2",
     "vitest": "^0.30.1",
     "webextension-polyfill": "^0.10.0"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.26.2"
   }
 }

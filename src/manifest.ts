@@ -16,8 +16,8 @@ export const manifest = {
   content_scripts: [
     {
       matches: [
-        'https://open.spotify.com/track/*',
-        'https://open.spotify.com/album/*',
+        'https://open.spotify.com/*/track/*',
+        'https://open.spotify.com/*/album/*',
         'https://www.deezer.com/*/track/*',
         'https://www.deezer.com/*/album/*',
         'https://music.apple.com/*/album/*',
