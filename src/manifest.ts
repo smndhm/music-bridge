@@ -1,5 +1,5 @@
 import { writeFile, mkdir } from 'fs/promises';
-import { version } from '../package.json' assert { type: 'json' };
+import pckg from '../package.json' assert { type: 'json' };
 
 const isFirefoxManifest = process.argv[3] === 'firefox';
 
@@ -7,7 +7,7 @@ export const manifest = {
   manifest_version: isFirefoxManifest ? 2 : 3,
   name: '__MSG_name__',
   description: '__MSG_description__',
-  version,
+  version: pckg.version,
   icons: {
     '48': 'icons/48.png',
     '128': 'icons/128.png',
