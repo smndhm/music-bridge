@@ -1,5 +1,11 @@
 # music-bridge
 
+## 1.5.4
+
+### Patch Changes
+
+- d5db269: add package for build
+
 ## 1.5.3
 
 ### Patch Changes
