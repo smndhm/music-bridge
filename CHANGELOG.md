@@ -1,5 +1,11 @@
 # music-bridge
 
+## 1.5.3
+
+### Patch Changes
+
+- b4f939e: fix manifest build script
+
 ## 1.5.2
 
 ### Patch Changes
