@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`options > browser (firefox) 1`] = `
+exports[`manifest > browser (firefox) 1`] = `
 {
   "background": {
     "persistent": false,
@@ -14,8 +14,8 @@ exports[`options > browser (firefox) 1`] = `
         "content.js",
       ],
       "matches": [
-        "https://open.spotify.com/track/*",
-        "https://open.spotify.com/album/*",
+        "https://open.spotify.com/*/track/*",
+        "https://open.spotify.com/*/album/*",
         "https://www.deezer.com/*/track/*",
         "https://www.deezer.com/*/album/*",
         "https://music.apple.com/*/album/*",
@@ -48,11 +48,11 @@ exports[`options > browser (firefox) 1`] = `
   "permissions": [
     "storage",
   ],
-  "version": "1.5.0",
+  "version": "0.0.0",
 }
 `;
 
-exports[`options > browser (not firefox) 1`] = `
+exports[`manifest > browser (not firefox) 1`] = `
 {
   "background": {
     "service_worker": "background.js",
@@ -63,8 +63,8 @@ exports[`options > browser (not firefox) 1`] = `
         "content.js",
       ],
       "matches": [
-        "https://open.spotify.com/track/*",
-        "https://open.spotify.com/album/*",
+        "https://open.spotify.com/*/track/*",
+        "https://open.spotify.com/*/album/*",
         "https://www.deezer.com/*/track/*",
         "https://www.deezer.com/*/album/*",
         "https://music.apple.com/*/album/*",
@@ -97,6 +97,6 @@ exports[`options > browser (not firefox) 1`] = `
   "permissions": [
     "storage",
   ],
-  "version": "1.5.0",
+  "version": "0.0.0",
 }
 `;

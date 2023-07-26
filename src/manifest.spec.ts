@@ -1,8 +1,17 @@
-import { describe, it, vi, afterEach, beforeEach, expect } from 'vitest';
+import { describe, it, vi, beforeEach, expect, afterEach } from 'vitest';
 
-describe('options', () => {
+describe('manifest', () => {
   beforeEach(() => {
     vi.resetModules();
+    vi.mock('../package.json', () => {
+      return {
+        version: '0.0.0',
+      };
+    });
+  });
+
+  afterEach(() => {
+    vi.restoreAllMocks();
   });
 
   it.each(['firefox', 'not firefox'])('browser (%s)', async (browser) => {
