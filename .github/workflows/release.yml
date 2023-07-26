@@ -20,5 +20,7 @@ jobs:
           version: 7
       - run: pnpm i
       - uses: changesets/action@v1
+        with:
+          publish: pnpm build:archives
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
