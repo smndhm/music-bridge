@@ -48,7 +48,7 @@ Plateformes prises en charge :
 
 Fonctionne avec les principales plateformes de streaming musical (Apple Music, Spotify, Deezer, Youtube Music, Amazon Music, etc.).
 
-# Assets
+## Assets
 
 Needed fomats for extensions stores:
 
