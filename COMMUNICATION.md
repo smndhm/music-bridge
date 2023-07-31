@@ -20,7 +20,7 @@ Supported platforms:
 - Youtube (only redirect to)
 - Youtube Music
 
-#### Chrome
+#### Chrome (not allowed to mention more than 5 other brands)
 
 Works with the major music streaming platforms (Apple Music, Spotify, Deezer, Youtube Music, Amazon Music, etc.).
 
@@ -44,7 +44,7 @@ Plateformes prises en charge :
 - Youtube (uniquement redirection vers)
 - Youtube Music
 
-#### Chrome
+#### Chrome (not allowed to mention more than 5 other brands)
 
 Fonctionne avec les principales plateformes de streaming musical (Apple Music, Spotify, Deezer, Youtube Music, Amazon Music, etc.).
 
