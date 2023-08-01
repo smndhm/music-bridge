@@ -7,10 +7,10 @@ With Music Bridge, you just have to click on this link to listen directly to the
 
 Available for:
 
-- [Chrome](https://chrome.google.com/webstore/detail/streaming-link/mbebbcaajfmockkcflajghbambbimpck)
+- [Chrome](https://chrome.google.com/webstore/detail/music-bridge/mbebbcaajfmockkcflajghbambbimpck)
 - [Firefox](https://addons.mozilla.org/fr/firefox/addon/music-bridge/)
 - [Edge](https://microsoftedge.microsoft.com/addons/detail/music-bridge/kfbedaeciahfjnknbjkcnjknkbdlcnld)
-<!-- - [Opera]() -->
+<!-- - [Opera](coming) -->
 
 Made with the [Odesli](https://odesli.co/) API.
 
