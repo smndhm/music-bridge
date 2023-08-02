@@ -52,14 +52,10 @@ Fonctionne avec les principales plateformes de streaming musical (Apple Music, S
 
 Needed fomats for extensions stores:
 
-- Logo :
-  - 128×128 Chrome, Firefox
-  - 300×300 Edge
-- Youtube Video : Chrome, Edge
-- Captures d'écran :
-  - 1280×800 Chrome, Edge
-  - 2400×1800 Firefox
-- Petite image promotionnelle :
-  - 440×280 : Chrome, Edge
-  - 300x188 : Opera
-- Image promotionnelle en haut de la page 1400×560 : Chrome, Edge
+| | Chrome | Firefox | Edge | Opera |
+| --: | :-: | :-: | :-: | :-: |
+| Logo | 128x128 | 128x128 | 300x300 | 64x64 |
+| Youtube Video | ✅ | ✅ |  | ✅ |
+| Captures d'écran | 1280×800 | 2400×1800 | 1280×800 |  |
+| Petite image promotionnelle | 440×280 |  | 440×280 | 300x188 |
+| Image promotionnelle<br> en haut de la page | 1400×560 |  | 1400×560 |  |
