@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> **Music Bridge has moved to [smndhm/web-extensions](https://github.com/smndhm/web-extensions/tree/main/extensions/music-bridge)**, with its full history. This repository is archived: issues and changes go there.
+>
+> Install Music Bridge: [Firefox](https://addons.mozilla.org/firefox/addon/music-bridge/) (also on Android), [Chrome](https://chromewebstore.google.com/detail/music-bridge/mbebbcaajfmockkcflajghbambbimpck), [Edge](https://microsoftedge.microsoft.com/addons/detail/kfbedaeciahfjnknbjkcnjknkbdlcnld).
+
 # Music Bridge
 
 **With Music Bridge open any music link on your favorite platform with one click!**
